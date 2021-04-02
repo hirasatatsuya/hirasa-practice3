@@ -1,0 +1,7 @@
+.c-contact-img-wrapper {
+  width: 52.7%;
+  @include mq(md) {
+    width: 520px;
+    max-width: 100%;
+  }
+}

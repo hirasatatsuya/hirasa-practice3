@@ -1,0 +1,13 @@
+.c-checkbox{
+  border: 1px solid #333;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  vertical-align: -3px;
+}
+.c-checkbox:checked{
+  background-image: url(../images/icon_chek.svg);
+  background-size: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

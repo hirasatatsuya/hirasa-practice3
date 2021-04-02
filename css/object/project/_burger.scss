@@ -1,0 +1,80 @@
+.p-burger-btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 38px;
+  right: 4vw;
+  z-index: 3;
+  @include mq(md) {
+    top: 28px;
+  }
+}
+
+.p-bar {
+  display: block;
+  background-color: #fff;
+  height: 2px;
+  width: 22px;
+  border-radius: 1px;
+
+  &_top {
+    transform: translateY(-4px);
+    transition: transform .3s;
+  }
+  &_bottom {
+    transform: translateY(4px);
+    transition: transform .3s;
+  }
+}
+
+.menu {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* ハンバーガーボタン（メニューが開いたとき） */
+.p-bar.cross.p-bar_top{
+  transform: translateY(2px)rotate(30deg);
+  transition: transform .3s;
+}
+.p-bar.cross.p-bar_mid{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.p-bar.cross.p-bar_bottom{
+  transform: translateY(-2px)rotate(-30deg);
+  transition: transform .3s;
+}
+
+/* ハンバーガーメニューが開いたとき */
+body.noscroll{
+  overflow: hidden;
+}
+.p-nav.open{
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform .3s,opacity .3s;
+}
+.burger-musk{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,.5);
+  z-index: 1;
+}
+
+.p-burger-btn.black .p-bar{
+  background-color: #333;
+  transition: background-color .3s;
+}
+.p-burger-btn.black .menu{
+  color: #333;
+  transition: color .3s;
+}

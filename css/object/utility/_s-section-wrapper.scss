@@ -1,0 +1,12 @@
+.s-section-wrapper {
+  width: 47.3%;
+  @include mq(md) {
+    width: 520px;
+    max-width: 100%;
+  }
+  &:first-of-type {
+    @include mq(md) {
+      margin-bottom: 80px;
+    }
+  } 
+}

@@ -1,0 +1,37 @@
+.c-copy {
+  &-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    color: #fff;
+    @include mq(md) {
+      right: -15%;
+      transform: translate(0,-50%);
+    }
+  }
+  &_jp {
+    font-size: 2rem;
+    margin-bottom: 4px;
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
+  }
+  &_company {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    @include mq(md) {
+      font-size: 1.6rem;
+    }
+  }
+  &-main {
+    font-size: 7.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
+    @include mq(md) {
+      font-size: 5.4rem;
+    }
+  }
+}

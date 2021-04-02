@@ -1,0 +1,6 @@
+.vision-wrapper{
+  padding-left: 15.7vw;
+  @include mq(md) {
+    padding-left: 0;
+  }
+}

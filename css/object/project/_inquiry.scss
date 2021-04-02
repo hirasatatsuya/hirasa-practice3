@@ -1,0 +1,29 @@
+.inquiry {
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 14px;
+  }
+  &-item {
+    margin-right: 50px;
+    @include mq(md) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.radio-btn {
+  width: 20px;
+  height: 20px;
+  border: solid 1px #333;
+  border-radius: 50%; 
+  vertical-align: -4px;
+}
+
+.radio-btn:checked{
+  background-color: #333;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 1px #333;
+}

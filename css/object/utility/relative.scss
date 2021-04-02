@@ -1,0 +1,6 @@
+.u-rel {
+  position: relative;
+  @include mq(md) {
+    padding-top: 120px;
+  }
+}

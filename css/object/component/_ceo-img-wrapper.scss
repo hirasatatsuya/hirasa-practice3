@@ -1,0 +1,21 @@
+.c-ceo-img-wrapper {
+  width: 36.4%;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  @include mq(md) {
+    width: 100%;
+    max-width: 320px;
+  }
+  @include mq(sm) {
+    max-width: 90%;
+    left: 0;
+  }
+
+  > img {
+    @include mq(sm) {
+      height: 226px;
+      object-fit: cover;
+    }
+  }
+}

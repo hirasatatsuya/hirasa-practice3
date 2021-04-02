@@ -1,0 +1,37 @@
+.p-nav{
+  /* display: none; */
+  font-weight: bold;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 36.1vw;
+  text-align: center;
+  padding: 120px 0 0;
+  background-color:rgba(34,34,34,.95);
+  z-index: 2;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform .3s,opacity .3s;
+
+  @include mq(md) {
+    width: 67.7vw;
+  }
+  &__list {
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  &__item {
+    margin-bottom: 30px;
+    &:first-of-type {
+      margin-bottom: 40px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    > a {
+      color: #fff;
+    }
+  }
+}

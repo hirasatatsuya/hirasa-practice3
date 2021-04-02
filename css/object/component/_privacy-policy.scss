@@ -1,0 +1,13 @@
+.c-privacy-policy {
+  &-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &-detail {
+    padding: 10px;
+    height: 230px;
+    border: 1px solid #333;
+    overflow: scroll;
+    margin-bottom: 40px;
+  }
+}

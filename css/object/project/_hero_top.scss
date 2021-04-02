@@ -1,0 +1,22 @@
+.p-hero_top{
+  height: 100vh;
+}
+.p-hero_top::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #222;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
+.p-hero_top__wrapper{
+  height: 86.5%;
+  width: 76.4%;
+  background-image: url(../images/kv-img.jpg);
+  background-size: cover;
+  background-position: center 0;
+  position: relative;
+}

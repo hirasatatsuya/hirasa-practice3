@@ -1,0 +1,49 @@
+.p-hero {
+  height: 60vh;
+  min-height: 450px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #222;
+    width: 50%;
+    height: 60vh;
+    min-height: 450px;
+    z-index: -1;
+  }
+
+  &__wrapper {
+    height: 86%;
+    width: 76.4%;
+    background-image: url(../images/heading-img_about.jpg);
+    background-size: cover;
+    background-position: center 0;
+    position: relative;
+  }
+
+  &__title {
+    font-size: 7.2rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+
+    @include mq(md) {
+      font-size: 5.2rem;
+      transform: translate(30%,-50%);
+    }
+
+    > span {
+      font-size: 2rem;
+      display: block;
+    }
+  }
+}
+
+.contact__bg {
+  background-image: url(../images/heading-img_contact.jpg);
+}

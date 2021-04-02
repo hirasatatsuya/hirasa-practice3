@@ -1,0 +1,15 @@
+.c-site-title{
+  width: 260px;
+  position: fixed;
+  top: 38px;
+  left: 4vw;
+  z-index: 1;
+  @include mq(md) {
+    width: 180px;
+    top: 21px;
+  }
+  &.black svg path{
+    fill: #333;
+    transition: fill .3s;
+  }
+}

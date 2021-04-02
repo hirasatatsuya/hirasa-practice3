@@ -1,0 +1,18 @@
+.c-company-info {
+  &-list {
+    border-top: 1px solid #ddd;
+    margin-bottom: 40px;
+
+    > div {
+      display: flex;
+      padding: 20px 0;
+      max-width: 800px;
+      margin-left: auto;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  &-title {
+    font-weight: bold;
+    flex-basis: 142px;
+  }
+}
